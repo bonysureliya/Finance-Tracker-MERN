@@ -1,22 +1,8 @@
-import express, {
-  Express,
-  Request,
-  Response,
-  Application,
-  json,
-} from "express";
-import dotenv from "dotenv";
+import app from './app';
 
-dotenv.config();
-
-const app = express();
-const port = process.env.PORT || 3000;
-express.json();
-
-app.get("/", (req: Request, res: Response) => {
-  res.send("Welcome to Express & TypeScript Server ");
-});
-
+const port = process.env.PORT || 5000;
 app.listen(port, () => {
-  console.log(`Server is Fire at http://localhost:${port}`);
+  /* eslint-disable no-console */
+  console.log(`Listening: http://localhost:${port}`);
+  /* eslint-enable no-console */
 });
