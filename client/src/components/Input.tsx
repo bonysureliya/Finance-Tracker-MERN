@@ -2,14 +2,12 @@ import React from 'react'
 import { InputProps } from '../interfaces/InputProps'
 
 const Input: React.FC<InputProps> = ({ type, variant, size }) => {
-  let classname = "focus:outline-none";
+  let classname = "focus:outline-none w-full px-4";
   if (variant === "underlined") {
     classname += " border-b border-gray-500";
   } else if (variant === "outlined") {
-    classname += " rounded-xl border border-gray-500";
+    classname += " rounded-lg border border-gray-500";
   }
-
-  classname += " w-full";
 
   if (size === "small") {
     classname += " h-[30px]";
