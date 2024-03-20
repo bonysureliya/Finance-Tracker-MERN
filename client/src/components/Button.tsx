@@ -14,7 +14,7 @@ const Button: React.FC<ButtonProps> = ({ variant, text, onClick, color }) => {
   }
 
   return (
-    <button onClick={onClick} className={classname}>{text.toUpperCase()}</button>
+    <button type='submit' onClick={onClick} className={classname}>{text.toUpperCase()}</button>
   );
 };
 

@@ -1,7 +1,6 @@
 import Input from "../components/Input"
 import Button from '../components/Button'
 import ButtonColor from "../enums/ButtonColor"
-import ButtonBorderColor from "../enums/ButtonBorderColor"
 
 const Login = () => {
   return (
